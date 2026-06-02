@@ -1,0 +1,31 @@
+# ── OS / editor cruft ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# ── Python ─────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ── Runtime / generated ────────────────────────────────────────
+outputs/
+inputs/
+seed_log.txt
+.env
+
+# ── ComfyUI runtime (cloned by setup script, never committed) ──
+ComfyUI/
+
+# ── Model weights (downloaded separately, far too large for git) ─
+models/
+*.safetensors
+*.ckpt
+*.pt
+*.bin
+*.gguf
