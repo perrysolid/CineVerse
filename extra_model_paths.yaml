@@ -1,0 +1,30 @@
+# ============================================================
+# Perry's Wan 2.2 Pipeline — ComfyUI Model Paths
+# ============================================================
+# This file tells ComfyUI where to find models.
+# It is copied to ComfyUI/extra_model_paths.yaml by setup_comfyui.sh
+#
+# Bare metal: paths are relative to the pipeline root
+# Docker: /workspace/models is mounted from the host
+#
+# ComfyUI reads this file automatically on startup.
+# ============================================================
+
+# --- Bare metal layout (used by setup_comfyui.sh) ---
+perry_pipeline:
+  base_path: ../models          # relative to ComfyUI directory
+  diffusion_models: diffusion_models/
+  vae: vae/
+  text_encoders: text_encoders/
+  loras: loras/
+  clip: clip/
+
+# --- Docker layout (paths inside container) ---
+# Uncomment this section when running in Docker (Dockerfile uses this path)
+# perry_pipeline_docker:
+#   base_path: /workspace/models
+#   diffusion_models: diffusion_models/
+#   vae: vae/
+#   text_encoders: text_encoders/
+#   loras: loras/
+#   clip: clip/
