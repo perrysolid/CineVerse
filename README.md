@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎬 Perry's Wan 2.2 Image-to-Video Pipeline
+# CineVerse
 
 **A category-aware, two-pass diffusion pipeline that turns a single reference image and one line of plain-English motion into a photorealistic 720p video clip.**
 
